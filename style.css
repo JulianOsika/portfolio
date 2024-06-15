@@ -1,0 +1,309 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: normal;
+    margin:0;
+    padding: 0;
+}
+
+@media(max-width: 500px){
+    ul{
+        margin-top: 2%;
+        list-style-position: inside;
+    }
+    
+    .history_element{
+        margin: 5% 0 0 5%;
+    }
+    
+    #container{
+        /* border: 5px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(28, 28, 28);
+    }
+    
+    #menu{
+        box-sizing:content-box;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(51, 51, 51);
+        order: 0;
+        transition: left 0.3s ease-in-out;
+    
+        position:fixed;
+        left: -60%; /* zeby cien sie ukryl */
+    
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    #menu img{
+        margin-left: 5%;
+    }
+    
+    .menu_element{
+        /* border: 1px solid grey; */
+        height: 10%;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        transition: left 0.3s ease-in-out;
+    
+    
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    .menu_element a{
+        /* border: solid red 1px; */
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    
+    .menu_element:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        font-size: 200%;
+        background-color:  #1C1C1C;
+    }
+    
+    .menu_element span{
+        /* border: solid red 1px; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 5%;
+    }
+    
+    #close-menu{
+        min-width: 50px;
+        width: 10%;
+    }
+    
+    #header{
+        /* border: 5px solid blue; */
+        display: flex;
+        width: auto;
+        max-height: 5%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    #header img{
+        width: 10%;
+        margin: 0 0 0 1%;
+    }
+    
+    #header h1{
+        margin: auto; /* inaczej napis nie jest na środku */
+        /* border: 2px solid red; */
+        width: 89%; /* 11% zzajmuje symbol menu */
+        text-align: center;
+        color: rgb(206, 206, 206);
+    }
+    
+    #content{
+        padding: 1% 0 0 0;
+    }
+    
+    #content h2{
+        margin: 10% 5% 0 5%;
+        color: rgb(243, 243, 243);
+    }
+    
+    #content p{
+        margin: 2% 5% 0 5%;
+        color: rgb(243, 243, 243);
+        text-align: justify;
+    }
+    
+    #footer{
+        /* border: 1px solid grey; */
+        background: linear-gradient(to bottom, #1C1C1C, #000000);
+        min-height: 100px;
+    }
+    
+    .indent{
+        text-indent: 5%;
+    }
+    
+    .bold{
+        font-weight: bold;
+        font-size: large;
+    }
+    
+    .date{
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+/* DUZE EKRANY */
+@media(min-width: 501px){
+    ul{
+        margin-top: 2%;
+        list-style-position: inside;
+    }
+    
+    .history_element{
+        margin: 5% 0 0 5%;
+    }
+    
+    #container{
+        /* border: 5px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(17, 17, 17);
+        align-items: center;
+    }
+    
+    #menu{
+        /* border: solid green 1px; */
+        box-sizing:content-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        top:50px;
+        left:0;
+        background-color: rgb(51, 51, 51);
+        order: 0;
+        transition: left 0.3s ease-in-out;
+    
+        position:fixed;
+
+        background-color: rgb(28, 28, 28);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    #menu img{
+        width:0;
+    }
+    
+    .menu_element{
+        /* border: 1px solid yellow; */
+        height: 100%;
+        width: 33.3333%;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        transition: left 0.3s ease-in-out;
+    
+    
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    .menu_element a{
+        /* border: solid red 1px; */
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    
+    .menu_element:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        font-size: 200%;
+        background-color:  #090909;
+        z-index: 10;
+    }
+    
+    .menu_element span{
+        /* border: solid red 1px; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #close-menu{
+        width: 0;
+    }
+    
+    #header{
+        /* border: 1px solid blue; */
+        position: fixed;
+        top:0;
+        left:0;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(28, 28, 28);
+        z-index: 10;
+    }
+
+    #header img{
+        width: 0;
+    }
+    
+    #header h1{
+        margin: auto; /* inaczej napis nie jest na środku */
+        /* border: 2px solid red; */
+        width: 89%; /* 11% zzajmuje symbol menu */
+        text-align: center;
+        color: rgb(206, 206, 206);
+    }
+    
+    #content{
+        background-color: rgb(28, 28, 28);
+        padding: 1% 0 0 0;
+        max-width: 700px;
+        padding-top: 80px;
+    }
+    
+    #content h2{
+        margin: 10% 5% 0 5%;
+        color: rgb(243, 243, 243);
+    }
+    
+    #content p{
+        margin: 2% 5% 0 5%;
+        color: rgb(243, 243, 243);
+        text-align: justify;
+    }
+    
+    #footer{
+        /* border: 1px solid grey; */
+        background: linear-gradient(to bottom, #1C1C1C, #000000);
+        width: 100%;
+        max-width: 700px;
+        min-height: 50px;
+    }
+    
+    .indent{
+        text-indent: 5%;
+    }
+    
+    .bold{
+        font-weight: bold;
+        font-size: large;
+    }
+    
+    .date{
+        font-size: small;
+    }
+}

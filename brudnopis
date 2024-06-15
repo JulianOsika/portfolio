@@ -1,0 +1,17 @@
+.photo{
+    width: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.fig_img{
+    width: px;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+
+figcaption{
+    width: 50%;
+    text-align: justify;
+}
